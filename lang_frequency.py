@@ -1,12 +1,5 @@
-
-
-def load_data(filepath):
-    pass
-
-
-def get_most_frequent_words(text):
-    pass
-
+import os
 
 if __name__ == '__main__':
-    pass
+    filepath = input('Введи путь к файлу')
+    os.system ("cat " + filepath + " | tr ' ' '\n' | sort | uniq -c | sort -rn | head -10")
